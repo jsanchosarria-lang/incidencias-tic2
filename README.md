@@ -1,8 +1,8 @@
 # Incidencias TIC (Cloud)
 
 ## Enlaces
-- Repo: (pega aquí)
-- GitHub Pages: (pega aquí)
+- Repo: https://github.com/jsanchosarria-lang/incidencias-tic2.git
+- GitHub Pages: https://jsanchosarria-lang.github.io/
 
 ## Evidencias (capturas)
 <!-- Puedes añadir una imagen (captura de pantalla) del siguiente modo (sustituye "alt text" por un texto alternativo
