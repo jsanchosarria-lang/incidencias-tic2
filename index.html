@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incidencias TIC (Cloud)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Incidencias TIC</h1>
+    <p class="sub">Mini-app cloud (Supabase) + GitHub Pages</p>
+
+    <div id="msg" class="msg" aria-live="polite"></div>
+
+    <!-- PANEL AUTH -->
+    <section id="authPanel" class="card">
+      <h2>Acceso</h2>
+
+      <label>Email</label>
+      <input id="email" type="email" placeholder="correo@ejemplo.com" />
+
+      <label>Contraseña</label>
+      <input id="password" type="password" placeholder="••••••••" />
+
+      <div class="row">
+        <button id="btnSignUp">Registrarme</button>
+        <button id="btnSignIn">Entrar</button>
+      </div>
+    </section>
+
+    <!-- PANEL APP -->
+    <section id="appPanel" class="card hidden">
+      <div class="row space">
+        <div>
+          <h2>Mi panel</h2>
+          <p class="small">Sesión: <span id="userEmail">—</span></p>
+        </div>
+        <button id="btnSignOut">Cerrar sesión</button>
+      </div>
+
+      <hr />
+
+      <h3>Nueva incidencia</h3>
+      <form id="formIncidencia">
+        <label>Aula</label>
+        <input id="aula" type="text" placeholder="Ej. A-12" required />
+
+        <label>Equipo</label>
+        <input id="equipo" type="text" placeholder="Ej. PC-03 / Proyector" required />
+
+        <label>Tipo</label>
+        <select id="tipo" required>
+          <option value="Red">Red</option>
+          <option value="Impresora">Impresora</option>
+          <option value="Software">Software</option>
+          <option value="Hardware">Hardware</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label>Descripción (sin datos personales)</label>
+        <textarea id="descripcion" rows="3" placeholder="Describe el problema de forma técnica" required></textarea>
+
+        <button type="submit">Crear incidencia</button>
+      </form>
+
+      <hr />
+
+      <h3>Mis incidencias</h3>
+      <table class="table" id="tablaIncidencias">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Aula</th>
+            <th>Equipo</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbodyIncidencias">
+          <!-- filas por JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="foot">
+      <span class="small">RA5: protege los datos. No uses datos personales.</span>
+    </footer>
+  </main>
+
+  <!-- Supabase JS (CDN) -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
