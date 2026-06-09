@@ -15,9 +15,9 @@ para que tu documento gane accesibilidad. El ejemplo supone que las imágenes la
 3) Policy (SELECT/INSERT/UPDATE) (se puede mirar donde mismo, pregunta a tu LLM favorito):
 ![alt text](res/privacidad.png)
 4) App funcionando (crear y listar):
-
+![alt text](res/pagina.png)
 5) App funcionando (cerrar incidencia):
-
+![alt text](res/incidencia.png)
 ## CE.f — Procedimiento de almacenaje cloud
 - Servicio cloud usado: Supabase (Postgres + Auth + RLS)
 - Estructura de tabla:
